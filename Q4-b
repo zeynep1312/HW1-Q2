@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+void computeHomeValue(void) 
+{  
+    int popularity, size;
+
+ 
+    printf("Enter the popularity of the neighborhood in a scale of 1 to 10: \n");
+    scanf("%d", &popularity);
+
+    printf("Enter the size of the house in a scale of 1 to 10: \n");
+    scanf("%d", &size);
+
+    int homeValue = (pow(popularity,3) + pow(size,2)) * 10000;
+
+    printf("The value of the home is: %d TL\n", homeValue);
+}
+
+int main() {
+    computeHomeValue();
+
+    return 0;
+}
